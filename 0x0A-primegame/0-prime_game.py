@@ -3,6 +3,7 @@
 
 
 def sieve_of_eratosthenes(max_n):
+    """ helper """
     primes = [True] * (max_n + 1)
     primes[0] = primes[1] = False
     p = 2
@@ -19,6 +20,7 @@ def sieve_of_eratosthenes(max_n):
 
 
 def isWinner(x, nums):
+    """ prime game """
     max_n = max(nums)
     primes = sieve_of_eratosthenes(max_n)
 
